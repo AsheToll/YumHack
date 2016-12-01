@@ -1,0 +1,34 @@
+<ion-view view-title="{{menus.restaurant}}">
+  <ion-content>
+      <ion-header-bar class="bar-default">
+      <ion-list>
+      <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" ng-repeat="menu in menus | limitTo: limitFour : 13" type="item-text-wrap" ng-href="#/tab/menus/{{menu.id}}">
+        <img ng-src="{{menu.image}}">
+        <h2 style = "line-height: 500%">{{menu.name}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+      
+    <ion-content class = "item item-text-wrap">
+    <img ng-src="{{menu.image}}" style="width: 100px; height: 100px">
+    <h2>{{menu.name}}</h2>
+    <p>
+      {{menu.order}}
+    </p>
+    </ion-content>
+  </ion-content>
+</ion-view>
+
+    <!--
+<ion-view view-title="Chipotle">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-thumbnail-left item-icon-right" ng-repeat="menu in menus | limitTo: limit : 12" type="item-text-wrap" href="#/tab/menus/{{menu.id}}">
+        <img ng-src="{{menu.image}}">
+        <h2 class = "menuStyle">{{menu.name}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+-->

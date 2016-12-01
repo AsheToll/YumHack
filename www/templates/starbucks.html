@@ -1,0 +1,11 @@
+<ion-view view-title="Starbucks">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-thumbnail-left item-icon-right" ng-repeat="menu in menus | limitTo: limitSix : 27" type="item-text-wrap" ng-href="#/tab/menus/{{menu.id}}">
+        <img ng-src="{{menu.image}}">
+        <h2 class = "menuStyle">{{menu.name}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

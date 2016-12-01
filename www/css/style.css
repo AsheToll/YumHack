@@ -1,0 +1,104 @@
+/*
+H1 Abril Fatface
+H2 Lato
+P Lato Light
+
+Blue 3FB8AF
+White FFFFFF
+Pink FF3D7F
+*/
+/* Document Fonts */
+h1 {
+    font-family: 'Abril Fatface';
+}
+
+h2 {
+    font-family: 'Lato-Regular';
+}
+
+p {
+    font-family: 'Lato-Light';
+}
+
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('/AbrilFatface-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('/lato/Lato-Light.ttf');
+}
+
+/* Tabs */
+.ion-error:before {
+    content: url('/icomoon_6_icons/SVG/error.svg') !important;
+}
+
+/* Dash */
+.container {
+    height: 200px;
+    width: 300px;
+    background: black;
+}
+.menuImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width:100%;
+    height: 100%;
+    
+    opacity: 0.7;
+}
+
+.menuTxt {
+    font-family: 'Abril Fatface';
+    font-size: 0;
+    z-index: 100;
+    position: absolute;
+    top: 175px;
+    left: 25px;
+}
+
+.menuTxt h2 {
+    font-family: 'Abril Fatface';
+    color: white;
+}
+
+.menuTxt, p {
+    font-family: 'Lato';
+    color: black;
+}
+
+/* Menu Tab */
+.menuStyle {
+    font-family: 'Abril Fatface';
+    padding-top: 32px;
+}
+
+/* Feedback Tab */
+.feedMe {
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: #3FB8AF;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 10px 24px;
+    margin: auto;
+}

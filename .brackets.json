@@ -1,0 +1,16 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/Ashley/Desktop/YumHack/gulpfile.js",
+        "C:/Users/Ashley/Desktop/YumHack/www/service-worker.js",
+        "C:/Users/Ashley/Desktop/YumHack/www/lib/ionic/js/ionic.min.js",
+        "C:/Users/Ashley/Desktop/YumHack/www/lib/ionic/js/ionic.js",
+        "C:/Users/Ashley/Desktop/YumHack/www/js/controllers.js",
+        "C:/Users/Ashley/Desktop/YumHack/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "C:/Users/Ashley/Desktop/YumHack/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "C:/Users/Ashley/Desktop/YumHack/plugins/cordova-plugin-statusbar/src/browser/StatusBarProxy.js",
+        "C:/Users/Ashley/Desktop/YumHack/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js",
+        "C:/Users/Ashley/Desktop/YumHack/plugins/cordova-plugin-statusbar/tests/tests.js",
+        "C:/Users/Ashley/Desktop/YumHack/plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "C:/Users/Ashley/Desktop/YumHack/www/lib/ionic-tinder-cards-2/example/gulpfile.js"
+    ]
+}

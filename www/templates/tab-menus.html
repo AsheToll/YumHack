@@ -1,0 +1,43 @@
+<ion-view view-title="Menus" hide-nav-bar = "true">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-thumbnail-left item-icon-right" ng-repeat="menu in menus | limitTo: limitTwo" type="item-text-wrap" ng-href="#/tab/menus/{{menu.id}}">
+        <img ng-src="{{menu.logo}}">
+        <h2 class = "menuStyle">{{menu.restaurant}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+
+<!--
+<ion-view view-title="Menus" hide-nav-bar = "true">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" type="item-text-wrap" href="#/tab/menus/{{menu.id}}">
+        <img ng-src="/img/cfa/cfa.jpg">
+        <h2 class = "menuStyle">Chick-fil-A</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+        
+      <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" type="item-text-wrap" href="#/tab/menus/{{menu.id}}">
+        <img ng-src="/img/chipotle.svg">
+        <h2 class = "menuStyle">Chipotle</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+        
+      <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" type="item-text-wrap" href="#/tab/menus/{{menu.id}}">
+        <img ng-src="/img/shakeshack.jpg">
+        <h2 class = "menuStyle">Shake Shack</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+        
+      <ion-item class="item-remove-animate item-thumbnail-left item-icon-right" type="item-text-wrap" href="#/tab/menus/{{menu.id}}">
+        <img ng-src="/img/starbucks.svg.png">
+        <h2 class = "menuStyle">Starbucks</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+-->

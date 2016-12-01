@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "435358424579",
+    "firebase_url": "https://yumhack-147722.firebaseio.com",
+    "project_id": "yumhack-147722",
+    "storage_bucket": "yumhack-147722.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:435358424579:android:0592e379fd64a3d5",
+        "android_client_info": {
+          "package_name": "com.YumHack.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "435358424579-20pcpuff6nuebm2p8468k004cist9fih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAasaOyXT8M0O_GaEObN_po41vlFPjh7XQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
