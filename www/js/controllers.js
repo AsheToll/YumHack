@@ -1,15 +1,6 @@
 angular.module('starter.controllers', [])
 
-/* .controller('DashCtrl', function($scope) {}) */
-
 .controller('DashCtrl', function($scope, Menus) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
 
   $scope.menus = Menus.all();
   $scope.remove = function(menu) {
@@ -25,8 +16,7 @@ angular.module('starter.controllers', [])
   $scope.menu = Menus.get($stateParams.menuId);
 })
 
-.controller('MenusCtrl', function($scope, Menus) {
-    
+.controller('MenusCtrl', function($scope, Menus) {  
   $scope.menus = Menus.all();
   $scope.remove = function(menu) {
     Menus.remove(menu);
@@ -35,6 +25,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('MenusDetailCtrl', function($scope, $stateParams, Menus) {
+    $scope.menus = Menus.all();
   $scope.menu = Menus.get($stateParams.menuId);
 })
 
@@ -44,7 +35,7 @@ angular.module('starter.controllers', [])
     Menus.remove(menu);
   };
   $scope.menu = Menus.get($stateParams.menuId);
-  $scope.limitThree = 8;
+  $scope.limitThree = 7;
 })
 
 .controller('ChipotleCtrl', function($scope, $stateParams, Menus) {
@@ -54,6 +45,17 @@ angular.module('starter.controllers', [])
   };
   $scope.menu = Menus.get($stateParams.menuId);
   $scope.limitFour = 5;
+    
+  $scope.toggleMenu = function(menu) {
+    if ($scope.isMenuShown(menu)) {
+      $scope.shownMenu = null;
+    } else {
+      $scope.shownMenu = menu;
+    }
+  };
+  $scope.isMenuShown = function(menu) {
+    return $scope.shownMenu === menu;
+  };
 })
 
 .controller('ShakeShackCtrl', function($scope, $stateParams, Menus) {
@@ -73,29 +75,6 @@ angular.module('starter.controllers', [])
   $scope.menu = Menus.get($stateParams.menuId);
   $scope.limitSix = 10;
 })
-/*
-.controller('MenusCtrl', function($scope, MiniMenu) {
-    $scope.menuList = MiniMenu.all();
-})
-
-.controller('MenusCtrl', function($scope, Menus) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  $scope.menus = Menus.all();
-  $scope.remove = function(menu) {
-    Menus.remove(menu);
-  };
-}) 
-
-.controller('MenuDetailCtrl', function($scope, $stateParams, MiniMenu) {
-  $scope.menu = MiniMenu.get($stateParams.menuId);
-}) */
 
 .controller('FeedbackCtrl', function($scope) {})
 
