@@ -1,11 +1,4 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
-// 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngAnimate'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -25,12 +18,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
 
-$ionicConfigProvider.tabs.position('top'); //bottom
+/* $ionicConfigProvider.tabs.position('top'); //bottom */
 
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
   $stateProvider
 
   // setup an abstract state for the tabs directive
@@ -73,7 +62,7 @@ $ionicConfigProvider.tabs.position('top'); //bottom
     }
   })
   .state('tab.chickfila', {
-    url: '/menus/:menuId',
+    url: '/menus/chickfila',
     views: {
       'tab-menus': {
         templateUrl: 'templates/chickfila.html',
@@ -82,7 +71,7 @@ $ionicConfigProvider.tabs.position('top'); //bottom
     }
   })
   .state('tab.chipotle', {
-    url: '/menus/:menuId',
+    url: '/menus/chipotle',
     views: {
       'tab-menus': {
         templateUrl: 'templates/chipotle.html',
@@ -91,7 +80,7 @@ $ionicConfigProvider.tabs.position('top'); //bottom
     }
   })
   .state('tab.shakeshack', {
-    url: '/menus/:menuId',
+    url: '/menus/shakeshack',
     views: {
       'tab-menus': {
         templateUrl: 'templates/shakeshack.html',
@@ -100,7 +89,7 @@ $ionicConfigProvider.tabs.position('top'); //bottom
     }
   })
   .state('tab.starbucks', {
-    url: '/menus/:menuId',
+    url: '/menus/starbucks',
     views: {
       'tab-menus': {
         templateUrl: 'templates/starbucks.html',
