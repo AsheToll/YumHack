@@ -33,8 +33,12 @@
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
+      
+    <script src="angular.js"></script>
+    <script src="path/to/angular-animate.js"></script>
+    <script src="path/to/angular-touch.js"></script>
   </head>
-  <body ng-app="starter">
+  <body ng-app="starter" class="platform-ios platform-android">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -47,6 +51,6 @@
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
-    <ion-nav-view animation = "slide-left-right" hide-nav-bar = "true"></ion-nav-view>
+    <ion-nav-view animation="slide-left-right" hide-nav-bar="true"></ion-nav-view>
   </body>
 </html>
