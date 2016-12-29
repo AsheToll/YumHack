@@ -35,11 +35,6 @@ p {
     src: url('/lato/Lato-Light.ttf');
 }
 
-/* Tabs */
-.ion-error:before {
-    content: url('/icomoon_6_icons/SVG/error.svg') !important;
-}
-
 /* Dash */
 .container {
     height: 200px;
@@ -79,18 +74,6 @@ p {
 .menuStyle {
     font-family: 'Abril Fatface';
     padding-top: 32px;
-}
-
-/* Menu Details */
-.list .item.item-accordion {
-    line-height:inherit;
-    padding-top: 0;
-    padding-bottom: 0;
-    transition: 0.04s all linear;
-}
-
-.list .item.item-accordion.ng-hide {
-    line-height: 0px;
 }
 
 /* Feedback Tab */
